@@ -33,5 +33,11 @@ public class Purchase {
     @JoinColumn(name = "item_id")
     private Item item;
 
+    public Purchase(LocalDateTime purchaseData, int priceAtPurchase, User user, Item item) {
+        this.purchaseData = purchaseData;
+        this.priceAtPurchase = priceAtPurchase;
+        this.user = user;
+        this.item = item;
+    }
 
 }
